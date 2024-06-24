@@ -9,6 +9,9 @@
 # production
 /build
 
+#cypress report
+/reports
+
 # misc
 .DS_Store
 .idea

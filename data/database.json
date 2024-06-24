@@ -74,6 +74,83 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "__Dyi834o",
+      "uuid": "65a9767f-9440-4df6-b711-cebbebbdeb69",
+      "firstName": "Ali",
+      "lastName": "Rami",
+      "username": "Ali_rami",
+      "password": "$2a$10$38Oq7w.aWiXaqlvnSA.kz.vuw2fzx9veVOK5U3B2co54xv1xmYQmG",
+      "balance": 0,
+      "createdAt": "2024-06-23T16:06:32.552Z",
+      "modifiedAt": "2024-06-23T16:06:32.552Z"
+    },
+    {
+      "id": "NUioKbSNj",
+      "uuid": "324b17ee-70cf-4446-9080-ed022cc6a6b4",
+      "firstName": "Ali",
+      "lastName": "Rami",
+      "username": "Ali_rami",
+      "password": "$2a$10$Ecsrn6P4Sd6dTtCYc28pF.7yTgVMS02RGlGmfaKhCZwFRRax7sZn.",
+      "balance": 0,
+      "createdAt": "2024-06-23T16:08:44.604Z",
+      "modifiedAt": "2024-06-23T16:08:44.604Z"
+    },
+    {
+      "id": "SJqzhbTcX",
+      "uuid": "67719bb7-a1e5-422e-b1b1-46c51ce609f8",
+      "firstName": "Ali",
+      "lastName": "Rami",
+      "username": "Ali_rami",
+      "password": "$2a$10$ZIgFQMbBZoFyuShnH3AFYebM/5AwqdmCpZzVcP49oBrUbxO8m.I6W",
+      "balance": 0,
+      "createdAt": "2024-06-23T16:09:49.322Z",
+      "modifiedAt": "2024-06-23T16:09:49.322Z"
+    },
+    {
+      "id": "vYXKisXRI",
+      "uuid": "ac7c3a88-c059-458a-a5b2-a0def8e28325",
+      "firstName": "Ali",
+      "lastName": "Rami",
+      "username": "Ali_rami",
+      "password": "$2a$10$Oe39MnccTkZcj4FwWMhjHOGnKrHkTJi12/DuUblxxeqlxT38Qv9Pq",
+      "balance": 0,
+      "createdAt": "2024-06-23T16:10:05.901Z",
+      "modifiedAt": "2024-06-23T16:10:05.901Z"
+    },
+    {
+      "id": "pVsjc3PU0",
+      "uuid": "e57fb430-5399-41df-b295-fe7c3b1a669e",
+      "firstName": "sqdqd",
+      "lastName": "qsdqsd",
+      "username": "Ali_rami",
+      "password": "$2a$10$OvzLHSGZB1ktGHRy4rrIs.65OGMPNwvARAR2gb/UJdwkLoYDH7VwG",
+      "balance": 0,
+      "createdAt": "2024-06-23T17:08:33.136Z",
+      "modifiedAt": "2024-06-23T17:08:33.136Z"
+    },
+    {
+      "id": "-vHovyBUu",
+      "uuid": "556ab1af-33b5-484b-b69e-337a7db4e6b5",
+      "firstName": "Ali",
+      "lastName": "Rami",
+      "username": "Ali_rami",
+      "password": "$2a$10$DfCvEBlypOKnbCMXzXDV1.EUkuzYbdOKz8t3zDNzWUbtE3G4XLuiy",
+      "balance": 0,
+      "createdAt": "2024-06-23T17:27:55.651Z",
+      "modifiedAt": "2024-06-23T17:27:55.651Z"
+    },
+    {
+      "id": "Kf909BFTH",
+      "uuid": "4af8f51d-7aeb-42dd-811d-423269df71ef",
+      "firstName": "Ali",
+      "lastName": "Rami",
+      "username": "Ali_rami",
+      "password": "$2a$10$U.uFQTEz8CJ6P8jJpaVwbua8rtQWNrHp5jAg5yBkCC4Bnut2wwxim",
+      "balance": 0,
+      "createdAt": "2024-06-24T12:19:21.256Z",
+      "modifiedAt": "2024-06-24T12:19:21.256Z"
     }
   ],
   "contacts": [

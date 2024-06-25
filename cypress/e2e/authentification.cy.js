@@ -2,7 +2,7 @@ describe('Authentificatioin', () => {
 
     beforeEach(() => {
       // Setup tasks before each test
-      cy.visit('http://localhost:3000/signin');
+      cy.visit('/signin');
     });
   
     it('Authenticate correctly', () => { 

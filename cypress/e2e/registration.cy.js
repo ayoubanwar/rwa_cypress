@@ -2,7 +2,7 @@ describe('Registration', () => {
 
   beforeEach(() => {
     // Setup tasks before each test
-    cy.visit('http://localhost:3000/signup');
+    cy.visit('/signup');
   });
 
   it('Create an account', () => {    
@@ -15,7 +15,7 @@ describe('Registration', () => {
     cy.url().should('include', '/signin');
   });
 
-  it('Display error messages under empty fields', ()=>{
+  it('Show an error messages on empty fields', ()=>{
     cy.get('#firstName').click(); 
     cy.get('#lastName').click(); 
     cy.get('#username').click(); 
@@ -30,13 +30,13 @@ describe('Registration', () => {
     cy.get('#confirmPassword-helper-text').should('be.visible').and('have.text', 'Confirm your password');
   });
 
-  it('Display Password must contain at least 4 characters', () => {    
+  it('Show Password must contain at least 4 characters', () => {    
     cy.get('#password').type('123');   
     cy.get('#confirmPassword').click();
     cy.get('#password-helper-text').should('be.visible').and('have.text', 'Password must contain at least 4 characters');
   });
 
-  it('Display Password does not match', () => {    
+  it('Show Password does not match', () => {    
     cy.get('#password').type('1234');  
     cy.get('#confirmPassword').type('1235'); 
     cy.get('#confirmPassword-helper-text').should('be.visible').and('have.text', 'Password does not match');

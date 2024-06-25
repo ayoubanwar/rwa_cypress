@@ -11,7 +11,7 @@
       "phoneNumber": "398-225-9900",
       "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 150953,
+      "balance": 64853,
       "createdAt": "2023-03-09T22:26:40.101Z",
       "modifiedAt": "2024-03-07T10:07:57.580Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "410-786-2112",
       "avatar": "https://avatars.dicebear.com/api/human/GjWovtg2hr.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 93026,
+      "balance": 179126,
       "createdAt": "2023-04-23T13:52:10.979Z",
       "modifiedAt": "2024-03-07T09:07:46.709Z"
     },
@@ -74,83 +74,6 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
-    },
-    {
-      "id": "__Dyi834o",
-      "uuid": "65a9767f-9440-4df6-b711-cebbebbdeb69",
-      "firstName": "Ali",
-      "lastName": "Rami",
-      "username": "Ali_rami",
-      "password": "$2a$10$38Oq7w.aWiXaqlvnSA.kz.vuw2fzx9veVOK5U3B2co54xv1xmYQmG",
-      "balance": 0,
-      "createdAt": "2024-06-23T16:06:32.552Z",
-      "modifiedAt": "2024-06-23T16:06:32.552Z"
-    },
-    {
-      "id": "NUioKbSNj",
-      "uuid": "324b17ee-70cf-4446-9080-ed022cc6a6b4",
-      "firstName": "Ali",
-      "lastName": "Rami",
-      "username": "Ali_rami",
-      "password": "$2a$10$Ecsrn6P4Sd6dTtCYc28pF.7yTgVMS02RGlGmfaKhCZwFRRax7sZn.",
-      "balance": 0,
-      "createdAt": "2024-06-23T16:08:44.604Z",
-      "modifiedAt": "2024-06-23T16:08:44.604Z"
-    },
-    {
-      "id": "SJqzhbTcX",
-      "uuid": "67719bb7-a1e5-422e-b1b1-46c51ce609f8",
-      "firstName": "Ali",
-      "lastName": "Rami",
-      "username": "Ali_rami",
-      "password": "$2a$10$ZIgFQMbBZoFyuShnH3AFYebM/5AwqdmCpZzVcP49oBrUbxO8m.I6W",
-      "balance": 0,
-      "createdAt": "2024-06-23T16:09:49.322Z",
-      "modifiedAt": "2024-06-23T16:09:49.322Z"
-    },
-    {
-      "id": "vYXKisXRI",
-      "uuid": "ac7c3a88-c059-458a-a5b2-a0def8e28325",
-      "firstName": "Ali",
-      "lastName": "Rami",
-      "username": "Ali_rami",
-      "password": "$2a$10$Oe39MnccTkZcj4FwWMhjHOGnKrHkTJi12/DuUblxxeqlxT38Qv9Pq",
-      "balance": 0,
-      "createdAt": "2024-06-23T16:10:05.901Z",
-      "modifiedAt": "2024-06-23T16:10:05.901Z"
-    },
-    {
-      "id": "pVsjc3PU0",
-      "uuid": "e57fb430-5399-41df-b295-fe7c3b1a669e",
-      "firstName": "sqdqd",
-      "lastName": "qsdqsd",
-      "username": "Ali_rami",
-      "password": "$2a$10$OvzLHSGZB1ktGHRy4rrIs.65OGMPNwvARAR2gb/UJdwkLoYDH7VwG",
-      "balance": 0,
-      "createdAt": "2024-06-23T17:08:33.136Z",
-      "modifiedAt": "2024-06-23T17:08:33.136Z"
-    },
-    {
-      "id": "-vHovyBUu",
-      "uuid": "556ab1af-33b5-484b-b69e-337a7db4e6b5",
-      "firstName": "Ali",
-      "lastName": "Rami",
-      "username": "Ali_rami",
-      "password": "$2a$10$DfCvEBlypOKnbCMXzXDV1.EUkuzYbdOKz8t3zDNzWUbtE3G4XLuiy",
-      "balance": 0,
-      "createdAt": "2024-06-23T17:27:55.651Z",
-      "modifiedAt": "2024-06-23T17:27:55.651Z"
-    },
-    {
-      "id": "Kf909BFTH",
-      "uuid": "4af8f51d-7aeb-42dd-811d-423269df71ef",
-      "firstName": "Ali",
-      "lastName": "Rami",
-      "username": "Ali_rami",
-      "password": "$2a$10$U.uFQTEz8CJ6P8jJpaVwbua8rtQWNrHp5jAg5yBkCC4Bnut2wwxim",
-      "balance": 0,
-      "createdAt": "2024-06-24T12:19:21.256Z",
-      "modifiedAt": "2024-06-24T12:19:21.256Z"
     }
   ],
   "contacts": [
@@ -9932,6 +9855,90 @@
       "requestResolvedAt": "",
       "createdAt": "2023-11-10T07:15:28.127Z",
       "modifiedAt": "2024-03-07T21:58:09.668Z"
+    },
+    {
+      "id": "fo0_FehCG",
+      "uuid": "9b933010-7383-40c1-bfca-42845fb71cd3",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-25T12:12:16.796Z",
+      "modifiedAt": "2024-06-25T12:12:16.796Z"
+    },
+    {
+      "id": "ORecFrETx",
+      "uuid": "0438a4bc-b8f5-43ae-bb91-75b302ee571d",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-25T12:14:34.535Z",
+      "modifiedAt": "2024-06-25T12:14:34.535Z"
+    },
+    {
+      "id": "roeGrtx_J",
+      "uuid": "49cbb6b0-6db0-4a94-aae4-80c780bd533f",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-25T12:15:10.024Z",
+      "modifiedAt": "2024-06-25T12:15:10.024Z"
+    },
+    {
+      "id": "pAa0io8Bg",
+      "uuid": "010a1bd9-ddba-4d07-8f3f-451e352a2b92",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-25T12:16:28.075Z",
+      "modifiedAt": "2024-06-25T12:16:28.075Z"
+    },
+    {
+      "id": "mHbgd1kcb",
+      "uuid": "9af4f6ec-401a-472b-8606-bf508e5cc3c4",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-25T12:17:38.465Z",
+      "modifiedAt": "2024-06-25T12:17:38.465Z"
+    },
+    {
+      "id": "7xV4ksiTT",
+      "uuid": "7d3e14ed-82f9-4159-864d-bb12f48a43ca",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-25T12:19:20.626Z",
+      "modifiedAt": "2024-06-25T12:19:20.626Z"
+    },
+    {
+      "id": "xg4nbT5a8",
+      "uuid": "aca8afa2-9798-4561-a260-5aaf4d27adc6",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-25T12:20:21.780Z",
+      "modifiedAt": "2024-06-25T12:20:21.780Z"
     }
   ],
   "likes": [
@@ -10508,6 +10515,76 @@
       "isRead": false,
       "createdAt": "2024-02-01T18:53:45.699Z",
       "modifiedAt": "2024-03-07T17:13:52.110Z"
+    },
+    {
+      "id": "vqSp_xho1E",
+      "uuid": "3467b641-8ada-4e45-bc7f-32e5d9047ce0",
+      "userId": "GjWovtg2hr",
+      "transactionId": "fo0_FehCG",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-25T12:12:16.836Z",
+      "modifiedAt": "2024-06-25T12:12:16.836Z"
+    },
+    {
+      "id": "gBE3GNmZN2",
+      "uuid": "638ee324-fc2c-4b83-92f9-b391bc932521",
+      "userId": "GjWovtg2hr",
+      "transactionId": "ORecFrETx",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-25T12:14:34.602Z",
+      "modifiedAt": "2024-06-25T12:14:34.602Z"
+    },
+    {
+      "id": "m3HiE9vjsz",
+      "uuid": "354000b1-1125-4214-a016-f7c8065e961d",
+      "userId": "GjWovtg2hr",
+      "transactionId": "roeGrtx_J",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-25T12:15:10.057Z",
+      "modifiedAt": "2024-06-25T12:15:10.057Z"
+    },
+    {
+      "id": "P47qze5rzC",
+      "uuid": "7fd14785-3c53-42aa-b3c6-ace4f057c24e",
+      "userId": "GjWovtg2hr",
+      "transactionId": "pAa0io8Bg",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-25T12:16:28.112Z",
+      "modifiedAt": "2024-06-25T12:16:28.112Z"
+    },
+    {
+      "id": "Cae2l0RFE3",
+      "uuid": "96bd0144-d863-4622-86e0-b6828f00e297",
+      "userId": "GjWovtg2hr",
+      "transactionId": "mHbgd1kcb",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-25T12:17:38.926Z",
+      "modifiedAt": "2024-06-25T12:17:38.926Z"
+    },
+    {
+      "id": "-TsnvBrsxh",
+      "uuid": "978ec8ff-08b3-40a7-9680-8e9f5ba1daa7",
+      "userId": "GjWovtg2hr",
+      "transactionId": "7xV4ksiTT",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-25T12:19:20.706Z",
+      "modifiedAt": "2024-06-25T12:19:20.706Z"
+    },
+    {
+      "id": "0IKqK4kHEa",
+      "uuid": "86d1da71-fb17-4d6d-b6e9-4f461d5827e9",
+      "userId": "GjWovtg2hr",
+      "transactionId": "xg4nbT5a8",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-25T12:20:21.886Z",
+      "modifiedAt": "2024-06-25T12:20:21.886Z"
     }
   ],
   "banktransfers": [

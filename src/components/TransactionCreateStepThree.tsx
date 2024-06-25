@@ -67,7 +67,9 @@ const TransactionCreateStepThree: React.FC<TransactionCreateStepThreeProps> = ({
               </Grid>
               <Grid item>
                 <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                  {receiver.firstName} {receiver.lastName}
+                  <div data-test="transaction-contact">
+                    {receiver.firstName} {receiver.lastName}
+                  </div>
                 </Typography>
               </Grid>
             </Grid>
@@ -84,10 +86,12 @@ const TransactionCreateStepThree: React.FC<TransactionCreateStepThreeProps> = ({
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item>
             <Typography component="h2" variant="h6" color="primary" gutterBottom>
-              {transactionDetails?.transactionType === "payment" ? "Paid " : "Requested "}
-              {transactionDetails?.amount &&
-                formatAmount(parseInt(transactionDetails.amount, 10) * 100)}{" "}
-              for {transactionDetails?.description}
+              <div data-test="transaction-summary">
+                {transactionDetails?.transactionType === "payment" ? "Paid " : "Requested "}
+                {transactionDetails?.amount &&
+                  formatAmount(parseInt(transactionDetails.amount, 10) * 100)}{" "}
+                for {transactionDetails?.description}
+              </div>
             </Typography>
           </Grid>
         </Grid>

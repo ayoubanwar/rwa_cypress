@@ -11,7 +11,32 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('login', (username, password) => { 
+    cy.visit('/signin');
+    cy.get('#username').type(username);
+    cy.get('#password').type(password);
+    cy.get('.MuiButton-label').click(); 
+ });
+
+ // In cypress/support/commands.js
+Cypress.Commands.add('loginByApi', (username, password) => {
+    cy.request({
+      method: 'POST',
+      url: 'http://localhost:3002/login', // Your API endpoint for login
+      body: {
+        type: "LOGIN", 
+        username: username, 
+        password: password
+    }
+    }).then((resp) => {
+      const cookieValue = resp.headers['set-cookie'][0].replace(`connect.sid=`, '').replace(`; Path=/; HttpOnly`, '');
+      //window.localStorage.setItem('connect.sid', cookieValue); // Adjust based on your app's auth mechanism
+      cy.setCookie('connect.sid', cookieValue);
+    });
+  });
+  
+
+
 //
 //
 // -- This is a child command --

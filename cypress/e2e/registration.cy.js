@@ -5,6 +5,17 @@ describe('Registration', () => {
     cy.visit('/signup');
   });
 
+  it('Display all signup page elements', () => {
+    cy.get('[data-test="signup-title"]').should('be.visible').and('contain.text', 'Sign Up');
+    cy.get('#firstName').should('be.visible'); 
+    cy.get('#lastName').should('be.visible'); 
+    cy.get('#username').should('be.visible'); 
+    cy.get('#password').should('be.visible'); 
+    cy.get('#confirmPassword').should('be.visible'); 
+    cy.get('[data-test="signup-submit"]').should('be.visible');
+    cy.get('[href="/signin"]').should('be.visible').and('contain.text', 'Have an account? Sign In');
+  })
+
   it('Create an account', () => {    
     cy.get('#firstName').type('Ali'); 
     cy.get('#lastName').type('Rami'); 
@@ -15,7 +26,7 @@ describe('Registration', () => {
     cy.url().should('include', '/signin');
   });
 
-  it('Show an error messages on empty fields', ()=>{
+  it('Display an error messages for empty form', ()=>{
     cy.get('#firstName').click(); 
     cy.get('#lastName').click(); 
     cy.get('#username').click(); 
@@ -30,16 +41,21 @@ describe('Registration', () => {
     cy.get('#confirmPassword-helper-text').should('be.visible').and('have.text', 'Confirm your password');
   });
 
-  it('Show Password must contain at least 4 characters', () => {    
+  it('Display Password must contain at least 4 characters', () => {    
     cy.get('#password').type('123');   
     cy.get('#confirmPassword').click();
     cy.get('#password-helper-text').should('be.visible').and('have.text', 'Password must contain at least 4 characters');
   });
 
-  it('Show Password does not match', () => {    
+  it('Display Password does not match', () => {    
     cy.get('#password').type('1234');  
     cy.get('#confirmPassword').type('1235'); 
     cy.get('#confirmPassword-helper-text').should('be.visible').and('have.text', 'Password does not match');
   });
+
+  it('Redirect to the signin page', () => {
+    cy.get('[href="/signin"]').click();
+    cy.url().should('include', '/signin');
+  })
   
 })

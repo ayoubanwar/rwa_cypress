@@ -10,7 +10,8 @@
 /build
 
 #cypress report
-/reports
+cypress/reports
+
 
 # misc
 .DS_Store

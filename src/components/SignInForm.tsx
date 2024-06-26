@@ -79,9 +79,11 @@ const SignInForm: React.FC<Props> = ({ authService }) => {
         <div>
           <RWALogo className={classes.logo} />
         </div>
-        <Typography component="h1" variant="h5">
-          Sign in
-        </Typography>
+        <div data-test="signin-title">
+          <Typography component="h1" variant="h5">
+            Sign in
+          </Typography>
+        </div>
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}

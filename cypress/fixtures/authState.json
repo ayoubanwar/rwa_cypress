@@ -1,0 +1,157 @@
+{
+  "actions": [
+    {
+      "type": "xstate.stop",
+      "activity": {
+        "src": {
+          "type": "performLogin"
+        },
+        "id": "authentication.loading:invocation[0]",
+        "type": "xstate.invoke"
+      }
+    },
+    {
+      "type": "redirectHomeAfterLogin"
+    }
+  ],
+  "activities": {
+    "authentication.loading:invocation[0]": false,
+    "authentication.logout:invocation[0]": false,
+    "authentication.signup:invocation[0]": false,
+    "authentication.refreshing:invocation[0]": false
+  },
+  "meta": {},
+  "events": [],
+  "value": "authorized",
+  "context": {
+    "user": {
+      "id": "uBmeaz5pX",
+      "uuid": "3b63b436-cacc-457a-a3e8-c962ef9838ac",
+      "firstName": "Ted",
+      "lastName": "Parisian",
+      "username": "Heath93",
+      "password": "$2a$10$nSaCsTPTtbbPTnFXBH0GZu0ExpNMud3d1IuKOC/6a9gwAHkdhppeu",
+      "email": "Santos.Runte65@gmail.com",
+      "phoneNumber": "398-225-9900",
+      "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
+      "defaultPrivacyLevel": "public",
+      "balance": 150953,
+      "createdAt": "2023-03-09T22:26:40.101Z",
+      "modifiedAt": "2024-03-07T10:07:57.580Z"
+    }
+  },
+  "_event": {
+    "name": "done.invoke.authentication.loading:invocation[0]",
+    "data": {
+      "type": "done.invoke.authentication.loading:invocation[0]",
+      "data": {
+        "user": {
+          "id": "uBmeaz5pX",
+          "uuid": "3b63b436-cacc-457a-a3e8-c962ef9838ac",
+          "firstName": "Ted",
+          "lastName": "Parisian",
+          "username": "Heath93",
+          "password": "$2a$10$nSaCsTPTtbbPTnFXBH0GZu0ExpNMud3d1IuKOC/6a9gwAHkdhppeu",
+          "email": "Santos.Runte65@gmail.com",
+          "phoneNumber": "398-225-9900",
+          "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
+          "defaultPrivacyLevel": "public",
+          "balance": 150953,
+          "createdAt": "2023-03-09T22:26:40.101Z",
+          "modifiedAt": "2024-03-07T10:07:57.580Z"
+        }
+      }
+    },
+    "$$type": "scxml",
+    "type": "external",
+    "origin": "authentication.loading:invocation[0]"
+  },
+  "_sessionid": "x:0",
+  "event": {
+    "type": "done.invoke.authentication.loading:invocation[0]",
+    "data": {
+      "user": {
+        "id": "uBmeaz5pX",
+        "uuid": "3b63b436-cacc-457a-a3e8-c962ef9838ac",
+        "firstName": "Ted",
+        "lastName": "Parisian",
+        "username": "Heath93",
+        "password": "$2a$10$nSaCsTPTtbbPTnFXBH0GZu0ExpNMud3d1IuKOC/6a9gwAHkdhppeu",
+        "email": "Santos.Runte65@gmail.com",
+        "phoneNumber": "398-225-9900",
+        "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
+        "defaultPrivacyLevel": "public",
+        "balance": 150953,
+        "createdAt": "2023-03-09T22:26:40.101Z",
+        "modifiedAt": "2024-03-07T10:07:57.580Z"
+      }
+    }
+  },
+  "historyValue": {
+    "current": "authorized",
+    "states": {}
+  },
+  "history": {
+    "actions": [
+      {
+        "type": "xstate.start",
+        "activity": {
+          "src": {
+            "type": "performLogin"
+          },
+          "id": "authentication.loading:invocation[0]",
+          "type": "xstate.invoke"
+        }
+      }
+    ],
+    "activities": {
+      "authentication.loading:invocation[0]": {
+        "type": "xstate.start",
+        "activity": {
+          "src": {
+            "type": "performLogin"
+          },
+          "id": "authentication.loading:invocation[0]",
+          "type": "xstate.invoke"
+        }
+      },
+      "authentication.logout:invocation[0]": false,
+      "authentication.signup:invocation[0]": false,
+      "authentication.refreshing:invocation[0]": false
+    },
+    "meta": {},
+    "events": [],
+    "value": "loading",
+    "context": {
+      "message": "Request failed with status code 404"
+    },
+    "_event": {
+      "name": "LOGIN",
+      "data": {
+        "type": "LOGIN",
+        "username": "Heath93",
+        "password": "s3cret"
+      },
+      "$$type": "scxml",
+      "type": "external"
+    },
+    "_sessionid": "x:0",
+    "event": {
+      "type": "LOGIN",
+      "username": "Heath93",
+      "password": "s3cret"
+    },
+    "historyValue": {
+      "current": "loading",
+      "states": {}
+    },
+    "children": {},
+    "done": false,
+    "changed": true,
+    "tags": []
+  },
+  "children": {},
+  "done": false,
+  "changed": true,
+  "tags": []
+}

@@ -11,46 +11,47 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (username, password) => { 
-    cy.visit('/signin');
-    cy.get('#username').type(username);
-    cy.get('#password').type(password);
-    cy.get('.MuiButton-label').click(); 
- });
+Cypress.Commands.add("login", (username, password) => {
+  cy.visit("/signin");
+  cy.get("#username").type(username);
+  cy.get("#password").type(password);
+  cy.get(".MuiButton-label").click();
+});
 
- // In cypress/support/commands.js
-Cypress.Commands.add('loginByApi', (username, password) => { 
-           
-        cy.request({
-            method: 'POST',
-            url: 'http://localhost:3002/login', // Your API endpoint for login
-            body: {
-              type: "LOGIN", 
-              username: username, 
-              password: password
-          }
-          }).then((resp) => {
-            const cookieValue = resp.headers['set-cookie'][0].replace(`connect.sid=`, '').replace(`; Path=/; HttpOnly`, '');                 
-            window.localStorage.setItem('connect.sid', cookieValue);
+// In cypress/support/commands.js
+Cypress.Commands.add("loginByApi", (username, password) => {
+  cy.request({
+    method: "POST",
+    url: "http://localhost:3002/login", // Your API endpoint for login
+    body: {
+      type: "LOGIN",
+      username: username,
+      password: password,
+    },
+  }).then((resp) => {
+    const cookieValue = resp.headers["set-cookie"][0]
+      .replace(`connect.sid=`, "")
+      .replace(`; Path=/; HttpOnly`, "");
+    window.localStorage.setItem("connect.sid", cookieValue);
 
-            cy.fixture('authState').then((authState) => {
-                window.localStorage.setItem('authState', JSON.stringify(authState));
-              }); 
-          });
+    cy.fixture("authState").then((authState) => {
+      window.localStorage.setItem("authState", JSON.stringify(authState));
+    });
   });
-  
+});
+
 //Intercepting transaction request to the server
-Cypress.Commands.add('transactionPayloadToServer', (transactionType, amount, note, receiverId) => {
-    cy.intercept('POST', '/transactions', (req) => {
-        expect(req.body).to.include({
-            "transactionType": transactionType,
-            "amount": amount,
-            "description": note,
-            "senderId": "uBmeaz5pX",
-            "receiverId": receiverId
-        })
-    }).as(transactionType);
-})
+Cypress.Commands.add("transactionPayloadToServer", (transactionType, amount, note, receiverId) => {
+  cy.intercept("POST", "/transactions", (req) => {
+    expect(req.body).to.include({
+      transactionType: transactionType,
+      amount: amount,
+      description: note,
+      senderId: "uBmeaz5pX",
+      receiverId: receiverId,
+    });
+  }).as(transactionType);
+});
 
 //
 //

@@ -11,7 +11,7 @@
       "phoneNumber": "398-225-9900",
       "avatar": "https://avatars.dicebear.com/api/human/uBmeaz5pX.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 126353,
+      "balance": 114053,
       "createdAt": "2023-03-09T22:26:40.101Z",
       "modifiedAt": "2024-03-07T10:07:57.580Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "410-786-2112",
       "avatar": "https://avatars.dicebear.com/api/human/GjWovtg2hr.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 117626,
+      "balance": 129926,
       "createdAt": "2023-04-23T13:52:10.979Z",
       "modifiedAt": "2024-03-07T09:07:46.709Z"
     },
@@ -10113,6 +10113,44 @@
       "requestStatus": "pending",
       "createdAt": "2024-06-27T10:12:29.971Z",
       "modifiedAt": "2024-06-27T10:12:29.971Z"
+    },
+    {
+      "id": "vmnz7_ay8",
+      "uuid": "29d45705-19c3-4fce-ba93-2ccd14ea1800",
+      "amount": 12300,
+      "description": "Happy payment",
+      "receiverId": "GjWovtg2hr",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-06-27T10:20:47.783Z",
+      "modifiedAt": "2024-06-27T10:20:47.783Z"
+    },
+    {
+      "id": "JSmPbrAjJ",
+      "uuid": "9869ac43-c3db-4aab-9b91-e9b7068e1459",
+      "amount": 34000,
+      "description": "Well received request",
+      "receiverId": "_XblMqbuoP",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2024-06-27T10:20:51.557Z",
+      "modifiedAt": "2024-06-27T10:20:51.557Z"
+    },
+    {
+      "id": "tR8u1Db7B",
+      "uuid": "f5f9c25d-0737-4ab5-b6e4-ef7587a7f7f8",
+      "amount": 34000,
+      "description": "Well received request",
+      "receiverId": "_XblMqbuoP",
+      "senderId": "uBmeaz5pX",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2024-06-27T10:20:56.348Z",
+      "modifiedAt": "2024-06-27T10:20:56.348Z"
     }
   ],
   "likes": [
@@ -10889,6 +10927,36 @@
       "isRead": false,
       "createdAt": "2024-06-27T10:12:29.990Z",
       "modifiedAt": "2024-06-27T10:12:29.990Z"
+    },
+    {
+      "id": "Grjuovi0xJ",
+      "uuid": "19de862a-7b95-4981-8365-4f1131e5f880",
+      "userId": "GjWovtg2hr",
+      "transactionId": "vmnz7_ay8",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-06-27T10:20:47.830Z",
+      "modifiedAt": "2024-06-27T10:20:47.830Z"
+    },
+    {
+      "id": "TAS03FVFIk",
+      "uuid": "b4b0a182-09c4-465b-bea7-b844cd83767a",
+      "userId": "_XblMqbuoP",
+      "transactionId": "JSmPbrAjJ",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2024-06-27T10:20:51.563Z",
+      "modifiedAt": "2024-06-27T10:20:51.563Z"
+    },
+    {
+      "id": "0wQ_14JUeW",
+      "uuid": "fbd2e51c-811f-4e5b-8f71-3b4d49900af4",
+      "userId": "_XblMqbuoP",
+      "transactionId": "tR8u1Db7B",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2024-06-27T10:20:56.352Z",
+      "modifiedAt": "2024-06-27T10:20:56.352Z"
     }
   ],
   "banktransfers": [

@@ -59,7 +59,7 @@ describe("Transaction", () => {
     .contains('Create Another Transaction');
   });
 
-  it.only('Should redirect to transaction`s first step', () => {
+  it('Should redirect to transaction`s first step', () => {
     const receiverName = "Darrel Ortiz";
     const receiverId = "_XblMqbuoP";
     const amount = "340";

@@ -16,5 +16,8 @@
 // Import commands.js using ES2015 syntax:
 import "./commands";
 
+//It will cause cypress to ignore all uncaught JS exceptions.
+Cypress.on('uncaught:exception', (err, runnable) => { return false });
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

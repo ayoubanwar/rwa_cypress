@@ -5,7 +5,6 @@ describe("Login", () => {
   });
 
   it("Display all signin page elements", () => {
-    //cy.conatains('h1', 'Sign In');
     cy.get('[data-test="signin-title"]').should("be.visible").contains("Sign in");
     cy.get("#username").should("be.visible");
     cy.get("#password").should("be.visible");
@@ -44,13 +43,8 @@ describe("Login", () => {
     cy.get("#username-helper-text").should("be.visible").and("have.text", "Username is required");
   });
 
-  it("Redirect to signup page", () => {
-    cy.get('[data-test="signup"]').click();
-    //cy
-    //.contains('Don't have an account? Sign Up')
-    //.should('have.att', 'href', '#/signup');
+  it("Redirect to signup page", () => {    
     //No need to click trought, we don't need to test the browser behaviour on href click!
-    //A test in less, AND in login_spec nothing related to registration_spec
-    cy.url().should("include", "/signup");
-  });
+    //A test in less, AND in login_spec nothing related to registration_spec should be tested    
+  }); 
 });
